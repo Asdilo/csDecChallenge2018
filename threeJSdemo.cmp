@@ -1,0 +1,19 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global"  >
+    <aura:attribute type="String" name="font" />
+    <aura:attribute type="String" name="text" />
+    <aura:attribute type="String" name="color" />
+    <aura:attribute type="String" name="size" />
+    <aura:attribute type="String" name="thickness" />
+    <aura:attribute type="String" name="opacity" />
+    <aura:attribute type="String" name="background" />
+    
+    
+    <ltng:require scripts="{!join(',',
+                           $Resource.ThreeJS,
+                           $Resource.OrbitControls)}"
+                  afterScriptsLoaded="{!c.generateCanvas}"/>    
+    
+    <canvas class="canvas" aura:id="canvas" id="canvas3d" ></canvas>
+    
+    
+</aura:component>
