@@ -1,0 +1,9 @@
+<design:component>
+    <design:attribute name="font" Label="Choose Font" datasource="Garamond,SalesforceSans,CenturyGothic,ComicSans,TestFont" default="TestFont" />
+    <design:attribute name="text" Label="Write in Text"  placeholder="CS Dev Challenge 2018" default="CS Dev Challenge 2018" />
+    <design:attribute name="color" Label="Text Color in ThreeJS format: Hex"  placeholder="#057075"  default="#057075"/>
+        <design:attribute name="size" Label="Choose Text Size,it matters" placeholder="25" default="25" />
+    <design:attribute name="thickness" Label="Choose Thicky Thickness" datasource="1,5,10,25" default="5" />
+    <design:attribute name="background" Label="Canvas BG Color in ThreeJS format: Hex"  placeholder="#ffffff"  default="#ffffff"/>
+    <design:attribute name="opacity" Label="Opacity AKA Alpha. 0.0 - 1" default="1" />    
+</design:component>
